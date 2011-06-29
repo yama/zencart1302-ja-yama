@@ -288,7 +288,7 @@ border-width:1px;
 font-weight:bold;
 }
 .headerBar{
-background-color:#c96e29;
+background-color:#d54e21;
 }
 .headerBarContent{
 color:#ffffff;
@@ -353,3 +353,5 @@ color:#ff6600;
 .lookupAttention {
   color: #FF0000;
 }
+
+table.header {background-color:#a62d00;}
