@@ -15,6 +15,7 @@
 /**
  * boolean if true the autoloader scripts will be parsed and their output shown. For debugging purposes only.
  */
+if(function_exists('date_default_timezone_set')) date_default_timezone_set('Asia/Tokyo');
 define('DEBUG_AUTOLOAD', false);
 /**
  * boolean used to see if we are in the admin script, obviously set to false here.
