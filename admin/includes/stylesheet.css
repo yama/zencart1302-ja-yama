@@ -15,8 +15,10 @@ input,select,textarea,
 table,td {font:inherit;}
 
 a{
-color:#0000ff;
 text-decoration:none;
+}
+a:link,a:visited {
+color:#009;
 }
 a:hover{
 color:#0000ff;
