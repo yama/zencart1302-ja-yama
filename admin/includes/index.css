@@ -16,8 +16,8 @@ font-weight:bold;
 padding:3px;
 }
 div.reportBox{
-background:#d7d6cc;
-border:1px solid #d7d6cc;
+background:#c2c1b7;
+border:1px solid #c2c1b7;
 margin-top:1em;
 }
 div.row{
@@ -49,6 +49,5 @@ text-align:center;
 display:inline;
 float:left;
 margin-left:5px;
-padding-top:3em;
 width:30%;
 }
