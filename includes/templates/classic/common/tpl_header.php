@@ -21,11 +21,9 @@ if ($messageStack->size('header') > 0) {
   echo $messageStack->output('header');
 }
 ?>
-    <table class="centershop" border="0" cellspacing="0" cellpadding="0">
 <?php
 if (!isset($flag_disable_header) || $flag_disable_header == false) {
 ?>
-      <tr><td>
         <table width="100%" border="0" cellspacing="0" cellpadding="0" class="headerNavigation">
           <tr>
             <td align="left" valign="top" width="35%" class="headerNavigation">
@@ -90,7 +88,6 @@ if (!isset($flag_disable_header) || $flag_disable_header == false) {
 <?php
 } else {
 ?>
-    <tr><td>
 <?php
 }
 ?>

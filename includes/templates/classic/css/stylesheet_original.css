@@ -34,14 +34,6 @@ BODY {
 	font-size:75%;
 }
 
-.centershop {
-	padding: 0px;
-	margin: 0px auto;
-	/*position: relative;*/
-	text-align: left;
-	width: 800px !important;
-}
-
 TD.main, P.main {
   line-height: 1.6;
 }

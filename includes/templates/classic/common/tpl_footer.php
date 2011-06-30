@@ -72,8 +72,6 @@ if (SHOW_FOOTER_IP == '1') {
         <td class="footerbottom"><?php echo FOOTER_TEXT_BODY; ?></td>
       </tr>
     </table>
-  </td></tr>
 <?php
 } // flag_disable_footer
 ?>
-</table>
