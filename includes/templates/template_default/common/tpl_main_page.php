@@ -38,6 +38,37 @@
  * @version $Id: tpl_main_page.php 3721 2006-06-07 03:19:12Z birdbrain $
  */
 
+switch($_GET['main_page'])
+{
+	case 'shopping_cart':
+	case 'login':
+	case 'create_account':
+	case 'create_account_success':
+	case 'checkout_shipping':
+	case 'checkout_shipping_address':
+	case 'checkout_confirmation':
+	case 'checkout_payment':
+	case 'checkout_payment_address':
+	case 'checkout_success':
+	case 'checkout_success_paypal_ipn_waiting':
+	case 'shippinginfo':
+	case 'shopping_cart':
+	case 'account':
+	case 'account_edit':
+	case 'account_history':
+	case 'account_history_info':
+	case 'account_newsletters':
+	case 'account_notifications':
+	case 'account_password':
+	case 'address_book':
+	case 'address_book_process':
+	case 'contact_us':
+		$column = '1';
+		break;
+	default:
+		$colmun = '3';
+}
+
 // the following IF statement can be duplicated/modified as needed to set additional flags
   if (in_array($current_page_base,explode(",",'list_pages_to_skip_all_right_sideboxes_on_here,separated_by_commas,and_no_spaces')) ) {
     $flag_disable_right = true;
@@ -76,7 +107,7 @@ if (COLUMN_LEFT_STATUS == 0 or (CUSTOMERS_APPROVAL == '1' and $_SESSION['custome
   // global disable of column_left
   $flag_disable_left = true;
 }
-if (!isset($flag_disable_left) || !$flag_disable_left) {
+if ((!isset($flag_disable_left) || !$flag_disable_left) && $colmun=='3') {
 ?>
 
  <td id="navColumnOne" class="columnLeft" style="width: <?php echo COLUMN_WIDTH_LEFT; ?>">
@@ -129,7 +160,7 @@ if (COLUMN_RIGHT_STATUS == 0 or (CUSTOMERS_APPROVAL == '1' and $_SESSION['custom
   // global disable of column_right
   $flag_disable_right = true;
 }
-if (!isset($flag_disable_right) || !$flag_disable_right) {
+if ((!isset($flag_disable_right) || !$flag_disable_right) && $colmun=='3') {
 ?>
 <td id="navColumnTwo" class="columnRight" style="width: <?php echo COLUMN_WIDTH_RIGHT; ?>">
 <?php
