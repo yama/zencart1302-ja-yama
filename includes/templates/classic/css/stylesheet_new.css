@@ -18,12 +18,12 @@ body {
 a img {border: none; }
 
 a:link, #navEZPagesTOC ul li a {
-	color: #3300FF;
+	color: #0000a2;
 	text-decoration: none;
 	}
  
 a:visited {
-	/*color: #3300FF;*/
+	color: #0000a2;
 	text-decoration: none;
 	}
 
@@ -59,11 +59,9 @@ h1, h2, h3, h4, h5, h6 {
 
 CODE {
 	font-family: arial, verdana, helvetica, sans-serif;
-	font-size: 1em;
 	}
 FORM, SELECT, INPUT {
 	display: inline;
-	font-size: 1em;
 	margin: 0.1em;
 }
 
@@ -91,7 +89,6 @@ LABEL, h4.optionName {
 }
 
 LABEL.checkboxLabel, LABEL.radioButtonLabel {
-	font-size: 0.95em;
 	margin: 0.2em 0.5em;
 	}
 
@@ -100,7 +97,6 @@ LABEL.checkboxLabel, LABEL.radioButtonLabel {
 	}
 
 LABEL.inputLabel {
-	font-size: 0.95em;
 	width: 10em;
 	float: left;
 	}
@@ -152,7 +148,7 @@ HR {
 #mainWrapper {
 	background-color: #ffffff;
 	text-align: left;
-	width: 750px;
+	width: 800px;
 	vertical-align: top;
 	}
 
@@ -190,15 +186,12 @@ HR {
 
 .navSplitPagesResult {
 	margin: 0.5em;
-	font-size: 0.9em;
 	}
 .navSplitPagesLinks {
 	margin: 0.5em;
-	font-size: 0.9em;
 	}
 .navNextPrevCounter {
 	margin: 0em;
-	font-size: 0.9em;
 	}
 .navNextPrevList {
 	display: inline;
@@ -265,7 +258,6 @@ HR {
 	border: 1px solid #9a9a9a;
 	}
 #navBreadCrumb, #navEZPagesTop {
-	font-size: 0.95em;
 	font-weight: bold;
 	margin: 0em;
 	padding: 0.5em;
@@ -292,7 +284,6 @@ HR {
 .alert {
 	color: #FF0000;
 	margin-left: 0.1em;
-	font-size: 0.9em;
 	}
 .advisory {}
 .important {
@@ -308,7 +299,6 @@ HR {
 	}
 
 .smallText, #siteinfoLegal, #siteinfoCredits, #siteinfoStatus, #siteinfoIP {
-	font-size: 0.9em;
 }
 
 /*Shopping Cart Display*/

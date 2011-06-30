@@ -19,13 +19,19 @@
 // +----------------------------------------------------------------------+
 // $Id: stylesheet_original.css 3286 2006-03-28 01:14:04Z drbyte $
 */
+
+html {
+	font-size:100.01%;
+}
+
 BODY {
 	background-color: #e5edf5;
 	color: #000000;
 	margin: 0px;
 	margin-bottom: 10px;
 	padding: 0px;
-   font: 11px Verdana, Arial, sans-serif;
+	font-family: Arial, helvetica, sans-serif;
+	font-size:75%;
 }
 
 .centershop {
@@ -33,12 +39,11 @@ BODY {
 	margin: 0px auto;
 	/*position: relative;*/
 	text-align: left;
-	width: 750px !important;
+	width: 800px !important;
 }
 
 TD.main, P.main {
-  font-size: 11px;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 A {
@@ -82,7 +87,6 @@ TD.headerNavigation {
   position: relative;
   vertical-align: middle;
   font-family: Verdana, Arial, sans-serif;
-  font-size: 11px;
   font-weight: bold;
   color:#000000;
   letter-spacing:1px;
@@ -90,7 +94,6 @@ TD.headerNavigation {
 }
 
 TD.breadCrumb {
-  font-size: 10px;
   font-weight: bold;
   color: #9a9a9a;
   padding: 3px;
@@ -112,7 +115,6 @@ TR.headerError {
 
 TD.headerError {
   font-family: Verdana, Arial, sans-serif;
-  font-size: 12px;
   background: #ff0000;
   color: #ffffff;
   font-weight : bold;
@@ -125,7 +127,6 @@ TR.headerInfo {
 
 TD.headerInfo {
   font-family: Verdana, Arial, sans-serif;
-  font-size: 12px;
   background: #00ff00;
   color: #ffffff;
   font-weight: bold;
@@ -140,12 +141,10 @@ TD.headerInfo {
 }
 
 .boxText {
-  font-size: 11px;
-  line-height: 125%;
+  line-height: 1.3;
 }
 .leftbox, .rightbox, .centerbox, .singlebox {
   font-family: Verdana, Arial, sans-serif;
-  font-size: 11px;
   background: #ffffff;
   border: 1px solid #9a9a9a;
   margin-bottom: 15px;
@@ -153,7 +152,6 @@ TD.headerInfo {
 
 .leftboxheading, .rightboxheading, .centerboxheading, .singleboxheading {
   /*background-color: #abbbd3;*/
-  font-size: 10px;
   font-weight: bold;
   color: #ffffff;
   padding: 3px;
@@ -171,7 +169,7 @@ TR.leftboxheading, TR.rightboxheading, TR.centerboxheading, TR.singleboxheading 
 }
 
 .leftboxcontent, .rightboxcontent, .centerboxcontent, .singleboxcontent {
-  line-height: 125%;
+  line-height: 1.3;
   padding: 4px;
   border-top: 1px solid #9a9a9a;
   border-bottom: 1px solid #9a9a9a;
@@ -185,18 +183,15 @@ TR.leftboxheading, TR.rightboxheading, TR.centerboxheading, TR.singleboxheading 
 
 .plainBox, .plainbox-description {
   font-family: Verdana, Arial, sans-serif;
-  font-size: 11px;
   background: #ffffff;
   border:1px solid #9a9a9a;
   padding: 5px;
 }
 .plainBoxHeading, TD.tableHeading {
-  font-size: 12px;
   font-weight: bold;
   padding: 11px 5px 5px;
 }
 .productListing-heading {
-  font-size: 10px;
   font-weight: bold;
   color: #ffffff;
   padding: 3px;
@@ -213,7 +208,6 @@ TD.productlisting {
 }
 
 TD.productListing-data {
-  font-size: 10px;
   padding: 5px;
 }
 
@@ -244,7 +238,6 @@ TD.pageHeading, DIV.pageHeading, h1 {
 TABLE.footer {
   background: #ffffff;
   text-align: center;
-  font-size: 10px;
   border-right: 1px solid #9a9a9a;
   border-left: 1px solid #9a9a9a;
   border-bottom: 1px solid #9a9a9a;
@@ -253,7 +246,6 @@ TABLE.footer {
 TR.footertop {
   background: #abbbd3;
   background-image: url(../images/tile_back.jpg);
-  font-size: 11px;
 }
 
 TD.footertop, TD.footerbottom {
@@ -264,7 +256,6 @@ TD.footertop, TD.footerbottom {
 -------------------------------------*/
 TD.cartBox {
    background: #eff4f8;
-   font-size: 10px;
    padding: 3px;
    border: 1px dotted #ffb062;
 }
@@ -279,7 +270,6 @@ TR.productListing-even, TR.upcomingProducts-even, .productsNotifications {
 
 TD.productListing-data-description-odd {
   background: #ffffff;
-  font-size: 10px;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 12px;
@@ -288,7 +278,6 @@ TD.productListing-data-description-odd {
 
 TD.productListing-data-description-even {
   background: #eff4f8;
-  font-size: 10px;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 12px;
@@ -309,25 +298,25 @@ SPAN.newItemInCart {
 }
 
 TD.smallText, SPAN.smallText, P.smallText, td.pageresults{
-   font-size: 10px;
 }
 
 TD.fieldKey {
-  font-size: 12px;
   font-weight: bold;
 }
 
 TD.fieldValue {
-  font-size: 12px;
 }
 
 CHECKBOX, INPUT, RADIO, SELECT {
-  font-size: 11px;
+}
+
+INPUT,SELECT,TEXTAREA {
+	font:inherit;
 }
 
 TEXTAREA {
   width: 100%;
-  font-size: 11px;
+  line-height:1.6;
 }
 
 .greetUser {
@@ -359,7 +348,6 @@ span.productSpecialPriceSale {
 }
 
 SPAN.productPriceDiscount, .inputRequirement {
-  font-size: 10px;
   color: #FF0000;
 }
 .moduleRow { }
@@ -372,12 +360,11 @@ SPAN.productPriceDiscount, .inputRequirement {
 .messageStackError, .messageStackWarning, errorBox {
   background-color: #ff0000;
   color: #ffffff;
-  font-size: 10px;
   padding: 4px;
   border: 1px solid #9a9a9a;
 }
 .messageStackSuccess { background-color: #b3ffa8; padding: 2px; border: 1px solid #9a9a9a; }
-.messageStackCaution { font-family: Verdana, Arial, sans-serif; font-size: 10px; background-color: #ffff00; }
+.messageStackCaution { background-color: #ffff00; }
 
 /* checkout totals */
 TD.ot-subtotal-Text, TD.ot-cod-fee-Text, TD.ot-total-Text, TD.ot-group-pricing-Text, TD.ot-gv-Text, TD.ot-loworderfee-Text, TD.ot-shipping-Text, TD.ot-subtotal-Text, TD.ot-tax-Text, TD.ot-coupon-Text {
@@ -394,7 +381,6 @@ TD.ot-subtotal-Amount, TD.ot-cod-fee-Amount, TD.ot-group-pricing-Amount, TD.ot-g
 
 .ProductInfoComments, TD.ProductInfoComments, SPAN.ProductInfoComments {
   color: #ff0000;
-  font-size: 10px;
   text-align : left;
   font-weight: bold;
   padding-top: 6px;
@@ -425,13 +411,11 @@ TABLE.popupattributeqty, TABLE.popupcouponhelp, TABLE.popupcvvhelp, TABLE.popupi
 /* categories_description */
 TABLE.categoriesdescription {
   font-family: Verdana, Arial, sans-serif;
-  font-size: 11px;
   background: #D0D0D0;
   border:1px solid #9a9a9a;
 }
 
 TD.categoriesdescription {
-  font-size: 11px;
   line-height: 1.0;
 }
 
